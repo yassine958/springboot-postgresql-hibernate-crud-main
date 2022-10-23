@@ -29,6 +29,7 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public long getId() {
+
 		return id;
 	}
 	public void setId(long id) {
@@ -37,6 +38,7 @@ public class Employee {
 	
 	@Column(name = "first_name", nullable = false)
 	public String getFirstName() {
+
 		return firstName;
 	}
 	public void setFirstName(String firstName) {
@@ -61,8 +63,8 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId
-				+ "]";
+		return "Employee [ id = "  + id + " , firstName = " + firstName + ", lastName = " + lastName + ", emailId = " + emailId
+				+ " ] ";
 	}
 	
 }
